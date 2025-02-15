@@ -1,0 +1,34 @@
+Uso
+Clonar o descargar el repositorio.
+(Opcional) Crear y activar un entorno virtual:
+bash
+Copiar
+Editar
+python -m venv venv
+source venv/bin/activate  # En Linux/Mac
+venv\Scripts\activate.bat # En Windows
+Instalar dependencias:
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+(Si proporcionas el requirements.txt en el repo con las librerías necesarias.)
+Ejecutar la aplicación:
+bash
+Copiar
+Editar
+python main.py
+En la aplicación:
+Ve a la pestaña Configuración y completa los datos: CUIT, Usuario, Contraseña y elige el entorno (Prueba o Producción).
+Guarda la configuración.
+Pasa a la pestaña Consulta Depósitos y haz clic en Consultar Depósitos.
+Una vez cargados los datos, puedes exportarlos a Excel con el botón Exportar a Excel.
+Archivos importantes
+main.py: Archivo principal que inicia la aplicación (podrías llamarlo app.py o senasa_app.py, según tu organización).
+config.json (generado automáticamente): Contiene la configuración y credenciales (no lo incluyas en tu repositorio público si quieres proteger tus datos sensibles).
+resultado_consulta.xlsx: Archivo Excel que se genera al exportar los resultados.
+Notas de seguridad
+No compartas el archivo config.json con credenciales reales en GitHub.
+Agrega un archivo .gitignore con la entrada config.json para que no se suba por error a tu repositorio.
+Contribuciones
+¡Las contribuciones son bienvenidas! Si encuentras un problema o deseas mejorar la aplicación, crea un issue o un pull request.
